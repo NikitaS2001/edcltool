@@ -9,6 +9,11 @@ edcltool - инструмент для написания edcl сценарие�
 lua версии 5.2 или позднее, с заголовочными файлами, пакеты:
 liblua5.20 и liblua5.2-dev (Для debian/ubuntu)
 
+```
+sudo apt install lua5.2
+sudo apt install liblua5.2-dev
+sudo apt install liblua5.2-0
+```
 Распакуйте дерево исходных кодов.
 
 tar vxf edcltool.tar.gz
@@ -16,12 +21,14 @@ tar vxf edcltool.tar.gz
 Произведите сблрку и установку в систему
 средствами cmake
 
+```
 cd edcltool
 mkdir build
+cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr
 make
 sudo make install
-
+```
 Так же можно собрать debian пакет, выполнив команду
 
 dpkg-buildpackage
